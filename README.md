@@ -81,4 +81,3 @@ For any questions or collaboration opportunities, feel free to reach out:
 ---
 
 **🌟 If you like this project, don’t forget to give it a star on GitHub!** ⭐
-```
