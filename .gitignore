@@ -1,0 +1,6 @@
+# global
+.env
+__pycache__/
+*.pyc
+.DS_Store
+node_modules/
