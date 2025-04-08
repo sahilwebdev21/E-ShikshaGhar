@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expert Instructors - E-Learning Platform</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="https://via.placeholder.com/40" alt="E-Learn Logo" />
+            <h1>E-Learn</h1>
+        </div>
+
+        <ul class="nav-links">
+            <li>
+                <a href="../index.html"><i class="fas fa-home"></i> Home</a>
+            </li>
+            <li class="dropdown">
+                <a href="#"><i class="fas fa-book-open"></i> Courses
+                    <i class="fas fa-chevron-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="#"><i class="fas fa-laptop-code"></i> Programming</a>
+                    <a href="#"><i class="fas fa-chart-line"></i> Business</a>
+                    <a href="#"><i class="fas fa-paint-brush"></i> Design</a>
+                    <a href="#"><i class="fas fa-calculator"></i> Mathematics</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#"><i class="fas fa-graduation-cap"></i> Degrees
+                    <i class="fas fa-chevron-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="#"><i class="fas fa-certificate"></i> Certificates</a>
+                    <a href="#"><i class="fas fa-user-graduate"></i> Diplomas</a>
+                    <a href="#"><i class="fas fa-university"></i> Bachelor's</a>
+                </div>
+            </li>
+            <li>
+                <a href="instructors.html" class="active"><i class="fas fa-chalkboard-teacher"></i> Instructors</a>
+            </li>
+            <li>
+                <a href="about.html"><i class="fas fa-info-circle"></i> About</a>
+            </li>
+        </ul>
+
+        <div class="search-bar">
+            <input type="text" placeholder="Search instructors..." />
+            <button><i class="fas fa-search"></i></button>
+        </div>
+
+        <div class="user-actions">
+            <div class="auth-buttons">
+                <button class="btn btn-login">Login</button>
+                <button class="btn btn-signup">Sign Up</button>
+            </div>
+        </div>
+
+        <button class="mobile-menu-btn">
+            <i class="fas fa-bars"></i>
+        </button>
+    </nav>
+
+    <!-- Instructors Hero Section -->
+    <section class="instructors-hero">
+        <div class="hero-content">
+            <h1 class="animated-text">Meet Our Instructors</h1>
+            <p class="subtitle">Learn from industry experts and experienced professionals</p>
+        </div>
+    </section>
+
+    <!-- Instructors Grid -->
+    <section class="instructors-listing">
+        <div class="section-title">
+            <h2>Featured Instructors</h2>
+            <p>Professional educators guiding your learning journey</p>
+        </div>
+        
+        <div class="instructors-filter">
+            <button class="filter-btn active">All</button>
+            <button class="filter-btn">Programming</button>
+            <button class="filter-btn">Design</button>
+            <button class="filter-btn">Business</button>
+            <button class="filter-btn">Data Science</button>
+        </div>
+
+        <div class="instructors-grid">
+            <!-- Instructor 1 -->
+            <div class="instructor-card" data-category="Programming">
+                <div class="instructor-header">
+                    <img src="https://via.placeholder.com/300x200" alt="John Doe" class="instructor-banner">
+                    <img src="https://via.placeholder.com/120" alt="John Doe" class="instructor-avatar">
+                </div>
+                <div class="instructor-body">
+                    <h3>John Doe</h3>
+                    <p class="instructor-title">Senior Software Engineer</p>
+                    <div class="instructor-stats">
+                        <div class="stat-item">
+                            <i class="fas fa-users"></i>
+                            <span>25K+ Students</span>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-play-circle"></i>
+                            <span>15 Courses</span>
+                        </div>
+                    </div>
+                    <p class="instructor-bio">Full-stack developer with 10+ years of experience building enterprise applications</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Instructor 2 -->
+            <div class="instructor-card" data-category="Design">
+                <div class="instructor-header">
+                    <img src="https://via.placeholder.com/300x200" alt="Sarah Johnson" class="instructor-banner">
+                    <img src="https://via.placeholder.com/120" alt="Sarah Johnson" class="instructor-avatar">
+                </div>
+                <div class="instructor-body">
+                    <h3>Sarah Johnson</h3>
+                    <p class="instructor-title">Lead UI/UX Designer</p>
+                    <div class="instructor-stats">
+                        <div class="stat-item">
+                            <i class="fas fa-users"></i>
+                            <span>18K+ Students</span>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-play-circle"></i>
+                            <span>9 Courses</span>
+                        </div>
+                    </div>
+                    <p class="instructor-bio">Award-winning designer specializing in user experience and interface design</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-dribbble"></i></a>
+                        <a href="#"><i class="fab fa-behance"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add more instructors following the same pattern -->
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>About E-Learn</h3>
+                <p>
+                    Empowering learners worldwide with quality education. Join our
+                    community to access world-class courses and degree programs.
+                </p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li>
+                        <a href="#"><i class="fas fa-chevron-right"></i> Courses</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-chevron-right"></i> Degrees</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-chevron-right"></i> Instructors</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-chevron-right"></i> About Us</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-chevron-right"></i> Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <ul>
+                    <li><i class="fas fa-envelope"></i> support@elearn.com</li>
+                    <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i> 123 Education Street, Tech
+                        City
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>
+                &copy; 2023 E-Learn. All rights reserved. |
+                <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

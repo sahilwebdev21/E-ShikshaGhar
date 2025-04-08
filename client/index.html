@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Learning Platform</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="https://via.placeholder.com/40" alt="E-Learn Logo" />
+            <h1>E-Learn</h1>
+        </div>
+
+        <ul class="nav-links">
+            <li>
+                <a href="index.html"><i class="fas fa-home"></i> Home</a>
+            </li>
+
+            <li class="dropdown">
+                <a href="#"><i class="fas fa-book-open"></i> Courses
+                    <i class="fas fa-chevron-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="#"><i class="fas fa-laptop-code"></i> Programming</a>
+                    <a href="#"><i class="fas fa-chart-line"></i> Business</a>
+                    <a href="#"><i class="fas fa-paint-brush"></i> Design</a>
+                    <a href="#"><i class="fas fa-calculator"></i> Mathematics</a>
+                </div>
+            </li>
+
+            <li class="dropdown">
+                <a href="#"><i class="fas fa-graduation-cap"></i> Degrees
+                    <i class="fas fa-chevron-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="#"><i class="fas fa-certificate"></i> Certificates</a>
+                    <a href="#"><i class="fas fa-user-graduate"></i> Diplomas</a>
+                    <a href="#"><i class="fas fa-university"></i> Bachelor's</a>
+                </div>
+            </li>
+
+            <li>
+                <a href="pages/instructors.html"><i class="fas fa-chalkboard-teacher"></i> Instructors</a>
+            </li>
+            <li>
+                <a href="pages/about.html"><i class="fas fa-info-circle"></i> About</a>
+            </li>
+        </ul>
+
+        <div class="search-bar">
+            <input type="text" placeholder="Search courses..." />
+            <button><i class="fas fa-search"></i></button>
+        </div>
+
+        <div class="user-actions">
+            <div class="auth-buttons">
+                <button class="btn btn-login">Login</button>
+                <button class="btn btn-signup">Sign Up</button>
+            </div>
+        </div>
+
+        <button class="mobile-menu-btn">
+            <i class="fas fa-bars"></i>
+        </button>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="animated-text">
+                    Transform Your Future with <span>E-Learning</span>
+                </h1>
+                <p class="subtitle">
+                    Access 10,000+ courses from industry experts. Learn anytime,
+                    anywhere.
+                </p>
+
+                <div class="stats-container">
+                    <div class="stat-box">
+                        <h3 data-count="10000">0</h3>
+                        <p>Active Students</p>
+                    </div>
+                    <div class="stat-box">
+                        <h3 data-count="500">0</h3>
+                        <p>Expert Instructors</p>
+                    </div>
+                    <div class="stat-box">
+                        <h3 data-count="98">0</h3>
+                        <p>Success Rate</p>
+                    </div>
+                </div>
+
+                <div class="cta-container">
+                    <div class="search-container">
+                        <input type="text" placeholder="What do you want to learn today?" />
+                        <button class="search-btn">
+                            <i class="fas fa-search"></i> Search
+                        </button>
+                    </div>
+                    <div class="button-group">
+                        <a href="#" class="btn-primary">Explore Courses</a>
+                        <a href="#" class="btn-video">
+                            <i class="fas fa-play-circle"></i>
+                            Watch Intro Video
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <img src="https://via.placeholder.com/600x400" alt="Online Learning" class="main-image" />
+                <div class="floating-card">
+                    <div class="card-content">
+                        <h4>Featured Course</h4>
+                        <p>AI & Machine Learning Basics</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i> 4.9 (1.2k reviews)
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Featured Courses -->
+    <section class="courses-section">
+        <div class="section-title">
+            <h2>Featured Courses</h2>
+            <p>Most Popular Learning Paths</p>
+        </div>
+        <div class="courses-grid">
+            <!-- Course 1 -->
+            <div class="course-card">
+                <div class="course-image" style="background: #ff6b6b;">
+                    <span class="course-badge">Bestseller</span>
+                </div>
+                <div class="course-content">
+                    <h3>Web Development Bootcamp</h3>
+                    <div class="course-rating">
+                        <i class="fas fa-star"></i> 4.9 (1,234)
+                    </div>
+                    <p class="course-instructor">By John Doe</p>
+                    <div class="course-footer">
+                        <span class="course-price">$89.99</span>
+                        <button class="btn-enroll">Enroll Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Course 2 -->
+            <div class="course-card">
+                <div class="course-image" style="background: #4ecdc4;">
+                    <span class="course-badge">New</span>
+                </div>
+                <div class="course-content">
+                    <h3>Mobile App Development</h3>
+                    <div class="course-rating">
+                        <i class="fas fa-star"></i> 4.8 (890)
+                    </div>
+                    <p class="course-instructor">By Sarah Smith</p>
+                    <div class="course-footer">
+                        <span class="course-price">$99.99</span>
+                        <button class="btn-enroll">Enroll Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Course 3 -->
+            <div class="course-card">
+                <div class="course-image" style="background: #45b7d1;">
+                    <span class="course-badge">Hot</span>
+                </div>
+                <div class="course-content">
+                    <h3>Data Science Fundamentals</h3>
+                    <div class="course-rating">
+                        <i class="fas fa-star"></i> 4.7 (1,502)
+                    </div>
+                    <p class="course-instructor">By Mike Johnson</p>
+                    <div class="course-footer">
+                        <span class="course-price">$119.99</span>
+                        <button class="btn-enroll">Enroll Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Course 4 -->
+            <div class="course-card">
+                <div class="course-image" style="background: #96ceb4;">
+                    <span class="course-badge">Special</span>
+                </div>
+                <div class="course-content">
+                    <h3>UI/UX Design Masterclass</h3>
+                    <div class="course-rating">
+                        <i class="fas fa-star"></i> 4.9 (2,134)
+                    </div>
+                    <p class="course-instructor">By Emma Wilson</p>
+                    <div class="course-footer">
+                        <span class="course-price">$79.99</span>
+                        <button class="btn-enroll">Enroll Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Learning Paths -->
+    <section class="paths-section">
+        <div class="section-title">
+            <h2>Learning Paths</h2>
+            <p>Structured Roadmaps for Success</p>
+        </div>
+        <div class="paths-container">
+            <!-- Path 1 -->
+            <div class="path-card">
+                <div class="path-progress">
+                    <svg width="100" height="100">
+                        <circle cx="50" cy="50" r="45" fill="none" stroke="#eee" stroke-width="8"/>
+                        <circle cx="50" cy="50" r="45" fill="none" stroke="#4a6bff" stroke-width="8" 
+                                stroke-dasharray="283" stroke-dashoffset="283" stroke-linecap="round">
+                            <animate attributeName="stroke-dashoffset" from="283" to="70" dur="1s" fill="freeze"/>
+                        </circle>
+                    </svg>
+                    <div class="progress-text">75%</div>
+                </div>
+                <div class="path-content">
+                    <h3>Full-Stack Developer Path</h3>
+                    <p>Master front-end and back-end development</p>
+                    <div class="path-meta">
+                        <span>6 Months</span>
+                        <span>•</span>
+                        <span>12 Courses</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Path 2 -->
+            <div class="path-card">
+                <div class="path-progress">
+                    <svg width="100" height="100">
+                        <circle cx="50" cy="50" r="45" fill="none" stroke="#eee" stroke-width="8"/>
+                        <circle cx="50" cy="50" r="45" fill="none" stroke="#4a6bff" stroke-width="8" 
+                                stroke-dasharray="283" stroke-dashoffset="283" stroke-linecap="round">
+                            <animate attributeName="stroke-dashoffset" from="283" to="141" dur="1s" fill="freeze"/>
+                        </circle>
+                    </svg>
+                    <div class="progress-text">50%</div>
+                </div>
+                <div class="path-content">
+                    <h3>Data Science Career Track</h3>
+                    <p>Become a professional data scientist</p>
+                    <div class="path-meta">
+                        <span>8 Months</span>
+                        <span>•</span>
+                        <span>15 Courses</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Path 3 -->
+            <div class="path-card">
+                <div class="path-progress">
+                    <svg width="100" height="100">
+                        <circle cx="50" cy="50" r="45" fill="none" stroke="#eee" stroke-width="8"/>
+                        <circle cx="50" cy="50" r="45" fill="none" stroke="#4a6bff" stroke-width="8" 
+                                stroke-dasharray="283" stroke-dashoffset="283" stroke-linecap="round">
+                            <animate attributeName="stroke-dashoffset" from="283" to="212" dur="1s" fill="freeze"/>
+                        </circle>
+                    </svg>
+                    <div class="progress-text">25%</div>
+                </div>
+                <div class="path-content">
+                    <h3>Digital Marketing Pro</h3>
+                    <p>Comprehensive digital marketing training</p>
+                    <div class="path-meta">
+                        <span>4 Months</span>
+                        <span>•</span>
+                        <span>8 Courses</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instructors -->
+    <section class="instructors-section">
+        <div class="section-title">
+            <h2>Expert Instructors</h2>
+            <p>Learn from Industry Professionals</p>
+        </div>
+        <div class="instructors-grid">
+            <!-- Instructor 1 -->
+            <div class="instructor-card">
+                <img src="https://via.placeholder.com/120" alt="Instructor" class="instructor-image" />
+                <h3>Sarah Johnson</h3>
+                <p>Senior Software Engineer</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+
+            <!-- Instructor 2 -->
+            <div class="instructor-card">
+                <img src="https://via.placeholder.com/120" alt="Instructor" class="instructor-image" />
+                <h3>Mike Chen</h3>
+                <p>Data Science Lead</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+
+            <!-- Instructor 3 -->
+            <div class="instructor-card">
+                <img src="https://via.placeholder.com/120" alt="Instructor" class="instructor-image" />
+                <h3>Emma Wilson</h3>
+                <p>UI/UX Designer</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-dribbble"></i></a>
+                    <a href="#"><i class="fab fa-behance"></i></a>
+                </div>
+            </div>
+
+            <!-- Instructor 4 -->
+            <div class="instructor-card">
+                <img src="https://via.placeholder.com/120" alt="Instructor" class="instructor-image" />
+                <h3>John Peterson</h3>
+                <p>Digital Marketing Expert</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials-section">
+        <div class="section-title">
+            <h2>Student Success Stories</h2>
+        </div>
+        <div class="testimonials-container">
+            <!-- Testimonial 1 -->
+            <div class="testimonial-card active">
+                <blockquote>
+                    "This platform transformed my career. Landed a job within 3 months!"
+                </blockquote>
+                <div class="author">
+                    <img src="https://via.placeholder.com/80" alt="Student" class="author-image" />
+                    <div class="author-info">
+                        <h4>Mike Chen</h4>
+                        <p>Software Developer @Google</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="testimonial-card">
+                <blockquote>
+                    "The quality of courses is exceptional. Best investment in my education!"
+                </blockquote>
+                <div class="author">
+                    <img src="https://via.placeholder.com/80" alt="Student" class="author-image" />
+                    <div class="author-info">
+                        <h4>Sarah Johnson</h4>
+                        <p>UX Designer @Microsoft</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="testimonial-card">
+                <blockquote>
+                    "Completely changed my career trajectory. Highly recommended!"
+                </blockquote>
+                <div class="author">
+                    <img src="https://via.placeholder.com/80" alt="Student" class="author-image" />
+                    <div class="author-info">
+                        <h4>David Wilson</h4>
+                        <p>Data Scientist @Amazon</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>About E-Learn</h3>
+                <p>
+                    Empowering learners worldwide with quality education. Join our
+                    community to access world-class courses and degree programs.
+                </p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li>
+                        <a href="#"><i class="fas fa-chevron-right"></i> Courses</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-chevron-right"></i> Degrees</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-chevron-right"></i> Instructors</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-chevron-right"></i> About Us</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-chevron-right"></i> Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <ul>
+                    <li><i class="fas fa-envelope"></i> support@elearn.com</li>
+                    <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i> 123 Education Street, Tech
+                        City
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>
+                &copy; 2023 E-Learn. All rights reserved. |
+                <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
